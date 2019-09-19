@@ -1,0 +1,119 @@
+/*navbar*/
+.navbar-lewagon {
+  justify-content: space-between;
+  background: black;
+  color: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link h3{
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+/*navbar*/
+
+/*banner*/
+.banner{
+  background-image: url("../img/portfolio.jpg");
+  height: 125vh;
+  position: relative;
+}
+/*banner*/
+
+.introduction {
+  background-image: url("../img/blackboard.jpg");
+  height: 500px;
+}
+
+.introduction h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  color: white;
+  text-shadow: 0px 1px 1px black;
+  font-family: 'Knewave', cursive;
+}
+
+h2 {
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+
+p {
+  font-family :'Permanent Marker', cursive;
+}
+
+.box {
+  position: absolute;
+  top: 350px;
+  padding-left: 30px;
+}
+
+/*card*/
+.card {
+  border: none;
+  background-color: #47E4BB;
+}
+
+.card > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+/*card (end)*/
+
+/*bentomo*/
+
+.bentomo {
+  height: 1000px;
+  background-color: #47E4BB;
+}
+/*bentomo*/
+
+/*golfriend*/
+.golfriend {
+  height: 1000px;
+  background-color: #D1EECC;
+}
+/*golfriend*/
+
+
+/*footer*/
+.footer {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.5;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.fab {
+  color: white;
+}
+.footer p {
+  color:white;
+
+}
+/*footer*/
