@@ -13,6 +13,9 @@
   color: white;
   font-family: 'Permanent Marker', cursive;
 }
+.nav-item {
+  align-items: center;
+}
 /*navbar*/
 
 /*banner*/
@@ -24,7 +27,7 @@
 /*banner*/
 
 .introduction {
-  background-image: url("../img/blackboard.jpg");
+  background-image: url("../img/blackboard2.jpg");
   height: 500px;
 }
 
@@ -63,14 +66,13 @@ p {
 }
 
 .card > img {
-  height: 200px;
+  height: 400px;
   width: 100%;
   object-fit: cover;
 }
 /*card (end)*/
 
 /*bentomo*/
-
 .bentomo {
   height: 1000px;
   background-color: #47E4BB;
@@ -80,6 +82,10 @@ p {
 /*golfriend*/
 .golfriend {
   height: 1000px;
+  background-color: #D1EECC;
+}
+
+.golfriend-color {
   background-color: #D1EECC;
 }
 /*golfriend*/
@@ -117,3 +123,27 @@ p {
 
 }
 /*footer*/
+
+/*.anim-typewriter {
+  animation: typewriter 4s steps(40) 1s 1 normal both,
+  blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+
+@keyframes typewriter {
+    from {
+      width: 1000;
+    }
+     to {
+      width: 1440;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+      border-right-color: transparent;
+    }
+}*/
