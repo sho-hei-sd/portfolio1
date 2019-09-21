@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Knewave|Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <!-- react -->
   <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
@@ -22,7 +24,34 @@
 
 <body>
   <!-- navbar -->
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <div class="logo">
+      <img src="img/logo.png" alt="logo">
+    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Projects</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      Get to know me!
+    </span>
+  </div>
+</nav>
+
+
+
+<!-- <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -31,7 +60,10 @@
       <li class="nav-item active">
         <div class="nav-link">
           <h3>Get to know me</h3>
-      </div>
+        </div>
+        <div class="nav-link">
+          <h3 class="inline">about me</h3>
+        </div>
       </li>
       <li class="nav-item dropdown">
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -42,36 +74,43 @@
     </ul>
   </div>
     <a class="nav-link" href="#"><h3>project</h3></a>
-</div>
+</div> -->
 <!-- navbar -->
+
+  <div id="hoge">
+    <h4 class="text-center">Welcome to my portfolio</h4>
+  </div>
 
 <!-- banner -->
   <div class="banner">
     <div class="box">
-      <h1 class="text-left">This is Shohei Okubo</h1>
-      <h2>Welcome to my portfolio</h2>
+      <div id="typed-strings">
+        <h2>This is Shohei Okubo</h2>
+      </div>
+      <span id="typed"></span>
+      <script>
+        var typed = new Typed('#typed',{
+          stringsElement: '#typed-strings',
+          backSpeed: 40,
+          typeSpeed: 40
+        });
+      </script>
+        <p>Recently, I graduated from coding bootcamp.<br>
+        learned ruby, ruby on rails, html, css, bootstrap, javascript</p>
     </div>
   </div>
 <!-- banner -->
 
+
 <!-- introduction -->
-  <div class="introduction d-flex align-items-center justify-content-center">
-    <script type="text/babel">
-    const loadDynamicBannerText = () => {
-  new Typed('#banner-typed-text', {
-    strings: ["Find homemade bento near you", "Pickup at a close convenience store", "Connect with chefs near you" ],
-    typeSpeed: 80,
-    loop: true
-  });
-}
-    </script>
-    <h2 class="anim-typewriter">I am Shohei Okubo. Recently, I graduated from coding bootcamp.<br>
+<!--   <div class="introduction d-flex align-items-center justify-content-center">
+    <h2>I am Shohei Okubo. Recently, I graduated from coding bootcamp.<br>
     learned ruby, ruby on rails, html, css, bootstrap, javascript</h2>
-  </div>
+  </div> -->
 <!-- introduction -->
 
+
 <!-- project -->
-<!-- <div class="container"> -->
   <div class="bentomo row">
     <div class="card col d-flex align-items-center justify-content-center">
       <img src="img/bentomo.png">
@@ -80,6 +119,7 @@
      <h2 class="app-intro">This app allows users to have a healthy and nutritious bento cooked by housewive. You can communicate housewive to customize your bento menu. Let's get healthy and have personalized bento!</h2>
     </div>
   </div>
+
   <div class="golfriend row">
     <div class="col d-flex align-items-center justify-content-center">
      <h2 class="app-intro">Golfriend is mainly for the elderly aiming to expand their connection with people and create the opportunities to have fun through golf.</h2>
@@ -88,24 +128,13 @@
       <img src="img/golfriend.png">
     </div>
   </div>
-<!-- </div> -->
 <!-- project -->
 
-<!-- react -->
-<!--   <div id="root"></div>
-  <script type="text/babel">
-    (()=> {
-
-      function showMessage() {
-      alert('Hello');
-    }
-
-      ReactDOM.render(
-      <div className="box" onClick={showMessage}></div>,
-      document.getElementById('root')
-      );
-  })();
-  </script> -->
+<!-- thx-message -->
+<section id="square">
+  <h4>Thank you for visiting my portfolio</h4>
+</section>
+<!-- thx-message -->
 
 
 <!-- footer -->
@@ -117,14 +146,14 @@
     <a href="#"><i class="fab fa-linkedin"></i></a>
   </div>
 </div>
-
 <!-- footer -->
-
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/setting.js"></script>
+  <script src="js/second.js"></script>
 
 </body>
 </html>
