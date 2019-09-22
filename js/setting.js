@@ -10,7 +10,7 @@ particlesJS('hoge',{
         }
       },
       "shape":{
-        "type":"circle", //シェイプの形（circle:丸、edge:四角、triangle:三角、polygon:多角形、star:星型、image:画像）
+        "type":"star", //シェイプの形（circle:丸、edge:四角、triangle:三角、polygon:多角形、star:星型、image:画像）
         "stroke":{
           "width":0, //シェイプの外線の太さ
           "color":"#ffcc00" //シェイプの外線の色
