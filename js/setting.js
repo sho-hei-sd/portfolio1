@@ -1,4 +1,4 @@
-particlesJS('hoge',{
+particlesJS('banner',{
   "particles":{
 
 //--シェイプの設定----------
