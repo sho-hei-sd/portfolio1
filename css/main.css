@@ -67,6 +67,10 @@ section {
   height: 100vh;
   overflow: hidden;
 }
+
+#text-none {
+  user-select: none;
+}
 /*banner*/
 
 
@@ -196,6 +200,5 @@ img {
 }
 .footer p {
   color:white;
-
 }
 /*footer*/
